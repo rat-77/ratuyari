@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Instagram Reels</title>
-  <style>
-    body {
-      background-color: #000;
-      color: red;
-      font-family: monospace;
-      text-align: center;
-      padding-top: 100px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Güvenlik Uyarısı</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .alert-container {
+            text-align: center;
+            background-color: rgba(255, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+        }
+        .alert-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ff3333;
+        }
+        .alert-icon {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .alert-message {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+        .error-code {
+            font-size: 0.9em;
+            color: #ff6666;
+        }
+        @media (max-width: 480px) {
+            .alert-container {
+                padding: 15px;
+            }
+            .alert-title {
+                font-size: 1.2em;
+            }
+            .alert-message {
+                font-size: 0.9em;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>⚠ Güvenlik Uyarısı ⚠</h1>
-  <p>📡 Cihazınıza RAT virüsü bulaştı.</p>
-  <p>Lütfen hemen bir yetkiliye başvurun.</p>
-  <p>HATA KODU: R4Y-1337</p>
+    <div class="alert-container">
+        <div class="alert-icon">⚠</div>
+        <div class="alert-title">Güvenlik Uyarısı</div>
+        <div class="alert-message">Cihazınıza RAT virüsü bulaştı!</div>
+        <div class="alert-message">Lütfen hemen bir yetkiliye başvurun.</div>
+        <div class="error-code">Hata Kodu: R4Y-1357</div>
+    </div>
+
+    <script>
+        // Telefon durum çubuğunu taklit etmek için basit bir animasyon
+        function updateStatusBar() {
+            const time = new Date().toLocaleTimeString('tr-TR', { hour: '2-digit', minute: '2-digit' });
+            console.log(Saat: ${time}); // Konsola zaman yazdır (test için)
+        }
+        setInterval(updateStatusBar, 1000);
+    </script>
 </body>
 </html>
